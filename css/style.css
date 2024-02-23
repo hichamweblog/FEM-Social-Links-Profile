@@ -1,0 +1,127 @@
+/* Reset */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+
+}
+
+img {
+  display: inline-block;
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  font: inherit;
+  color: inherit;
+
+}
+
+/* Global Styles */
+body {
+  font-family: 'Inter', sans-serif;
+  color: #FFF;
+  background: #141414;
+  font-size: 0.875rem;
+  font-style: normal;
+  line-height: 150%;
+  font-weight: 400;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  border-radius: 0.75rem;
+  background: #1F1F1F;
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 24rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 48em) {
+  .wrapper {
+    padding: 2.5rem;
+  }
+}
+
+/* Profile Info Styles */
+.avatar {
+  margin: 0 auto 1.5rem auto;
+  border-radius: 62.4375rem;
+  width: 5.5rem;
+  height: 5.5rem;
+  object-fit: cover;
+}
+
+.name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+
+}
+
+.location {
+  color: #C5F82A;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.role {
+  margin-bottom: 1.5rem;
+}
+
+/* Links Styles */
+
+.links-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.link {
+  display: block;
+  font-weight: 700;
+  border-radius: 0.5rem;
+  background: #333;
+  padding: 0.75rem;
+  text-align: center;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.link:hover {
+  background: #C5F82A;
+  color: #141414;
+}
+
+/* SRC Only */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
